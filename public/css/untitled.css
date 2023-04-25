@@ -1,0 +1,5 @@
+.logged-in {
+  padding-top: 6rem;
+  background-color: var(--bs-danger);
+}
+

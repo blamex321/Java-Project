@@ -1,0 +1,23 @@
+{
+  "name": "java-project",
+  "version": "1.0.0",
+  "description": "App for water system management.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blamex321/Java-Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blamex321/Java-Project/issues"
+  },
+  "homepage": "https://github.com/blamex321/Java-Project#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.5"
+  }
+}
