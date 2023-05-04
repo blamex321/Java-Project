@@ -1,7 +1,7 @@
 require('dotenv').config()
 
 const express = require('express');
-const stripe = require('stripe')('sk_test_51N2Z2dSA6f1HGrBbMIIlHhyckM5yX2PjxSvZsPPw5rKTrB7hGhGqp5m0kQgg1GDbvuaORa6CKw4P91tBew5GPEUm002ZT9xRPK');
+const stripe = require('stripe')(process.env.STRIPE_API);
 const app = express();
 
 const loginRoute = require("./routes/login");
@@ -11,7 +11,7 @@ const contactRoute = require("./routes/contact")
 app.use(express.static('public'));
 app.use("/login",loginRoute);
 app.use("/signup",signupRoute);
-app.use("/contact",contactRoute);
+app.use("/contacts",contactRoute);
 
 
 app.get("/",function(req,res){
