@@ -50,7 +50,17 @@ app.post('/create-checkout-session', async (req, res) => {
     res.redirect(303, session.url);
 });
 
+app.get("/forgotten-password",(req,res) => {
+    res.sendFile(__dirname + "/src/forgotten-password.html")
+});
 
+app.get("/order",function(req,res){
+    res.sendFile(__dirname + "/src/order.html");
+});
+
+app.get("/user",function(req,res){
+    res.sendFile(__dirname+"/src/user.html");
+});
 
 app.listen(3000| process.env.PORT,function(err){
     if(err){
