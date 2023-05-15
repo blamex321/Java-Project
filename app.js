@@ -44,8 +44,8 @@ app.post('/create-checkout-session', async (req, res) => {
         },
       ],
       mode: 'payment',
-      success_url: 'http://localhost:3000/success',
-      cancel_url: 'http://localhost:3000/fail',
+      success_url: 'https://ruby-elk-tutu.cyclic.app/success',
+      cancel_url: 'https://ruby-elk-tutu.cyclic.app/fail',
     });
     res.redirect(303, session.url);
 });
